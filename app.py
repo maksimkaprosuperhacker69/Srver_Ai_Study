@@ -7,7 +7,10 @@ import file_reader_text
 
 app = Flask(__name__)
 
-
+@app.route("/")
+def home:
+    return 'hello'
+    
 @app.route("/ans/")
 def read_item(promt_response: str, course_id: str, file_path: str, que_count: int = 10, ):
     name = f'{course_id}.png'
