@@ -8,7 +8,7 @@ import file_reader_text
 app = Flask(__name__)
 
 @app.route("/")
-def home:
+def home():
     return 'hello'
     
 @app.route("/ans/")
